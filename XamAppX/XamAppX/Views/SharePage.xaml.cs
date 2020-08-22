@@ -11,22 +11,26 @@ using Xamarin.Essentials;
 namespace XamAppX.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SMSPage : ContentPage
+    public partial class SharePage : ContentPage
     {
-        public SMSPage()
+        public SharePage()
         {
             InitializeComponent();
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void ButtonShare_Clicked(object sender, EventArgs e)
         {
             try
             {
-                await Sms.ComposeAsync(new SmsMessage(EntryMessage.Text, EntryNumber.Text));
+                await Share.RequestAsync(new ShareTextRequest
+                {
+                    Text = EntryShare.Text,
+                    Title = "Share"
+                });
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Alert", $"Error In SMSPage: {ex.Message}", "OK");
+                await Application.Current.MainPage.DisplayAlert("Alert", $"Error In SharePage: {ex.Message}", "OK");
             }
         }
     }

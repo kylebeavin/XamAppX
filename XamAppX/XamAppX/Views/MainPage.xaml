@@ -58,5 +58,27 @@
                 <views:SMSPage />
             </x:Arguments>
         </NavigationPage>
+
+        <NavigationPage Title="Share">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_about.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:SharePage />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Device Display">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_about.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:DeviceDisplayPage />
+            </x:Arguments>
+        </NavigationPage>
     </TabbedPage.Children>
 </TabbedPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamAppX.Views.SharePage"
+             xmlns:vm="clr-namespace:XamAppX.ViewModels"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:ShareViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Entry Text=""
+                   Placeholder="What do you want to share?"
+                   x:Name="EntryShare"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="Center" />
+
+            <Button x:Name="ButtonShare"
+                    Clicked="ButtonShare_Clicked"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="Black"
+                    BackgroundColor="Transparent"
+                    Text="Share" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
