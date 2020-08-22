@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamAppX.Android", "XamAppX\XamAppX.Android\XamAppX.Android.csproj", "{E4E03F7E-4E37-4DD7-A98E-0C7B379A029E}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamAppX.iOS", "XamAppX\XamA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamAppX.UWP", "XamAppX\XamAppX.UWP\XamAppX.UWP.csproj", "{80081596-5026-4398-A752-9B525E71DA30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamAppX", "XamAppX\XamAppX\XamAppX.csproj", "{8CC02279-88F8-4067-871C-EAAA5C053F78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamAppX", "XamAppX\XamAppX\XamAppX.csproj", "{8CC02279-88F8-4067-871C-EAAA5C053F78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

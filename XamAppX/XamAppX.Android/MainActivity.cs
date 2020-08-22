@@ -16,6 +16,7 @@ namespace XamAppX.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
